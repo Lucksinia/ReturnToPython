@@ -1,7 +1,7 @@
 """
 Fist "Program" to remember HOW TO CODE.
 Generate song about beer with right bottle count and word forms.
- "Head First Python"
+ From "Head First Python 2 edition" by Paul Berry
 """
 import threading
 
