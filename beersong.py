@@ -3,17 +3,7 @@ Fist "Program" to remember HOW TO CODE.
 Generate song about beer with right bottle count and word forms.
  From "Head First Python 2 edition" by Paul Berry
 """
-
-import sys
-from time import sleep
-
-# TODO: Re-implement letter-by-letter some day in the future.
-def ochprint(str, ms=0.02):
-    for ch in str:
-        sys.stdout.write(ch)
-        sys.stdout.flush()
-        sleep(ms)
-
+from prettify import ochprint
 
 word = "bottles"
 for bottles_num in range(99, 0, -1):

@@ -3,11 +3,12 @@ Bagels! game implementation. Shoud also implement character-by-character
 for style points...
 """
 from random import shuffle
+from prettify import ochprint
 
 DIGITS = 3  # Number of digits in number.
 GUESSES = 10  # all posibble guesses
 
-print(
+ochprint(
     f"""Number guessing game in Terminal!
 By Lucksinia, denni334334@gmail.com
 
@@ -64,13 +65,13 @@ def gameloop():
     """Main Gameloop logic for Bagels!"""
     while True:
         secret = get_secret()
-        print(f"I have thought up a number.")
-        print(f"You have {GUESSES} guesses to get it right.")
+        ochprint(f"I have thought up a number.\n")
+        ochprint(f"You have {GUESSES} guesses to get it right.\n")
         guessn = 1
         while guessn <= GUESSES:
             guess = ""
             while len(guess) != DIGITS or not guess.isdecimal():
-                print(f"Guess #{guessn}:")
+                ochprint(f"Guess #{guessn}:\n")
                 guess = input("~> ")
 
             clues = get_clues(secret, guess)
@@ -80,13 +81,13 @@ def gameloop():
             if guess == secret:
                 break
             if guessn > GUESSES:
-                print("You ran out of guesses...")
-                print(f"Correct answer was: {secret}.")
+                ochprint("You ran out of guesses...\n")
+                ochprint(f"Correct answer was: {secret}.\n")
 
-        print("Do you want to play another game?(y/n):")
+        ochprint("Do you want to play another game?(y/n):")
         if not input("~> ").lower().startswith("y"):
             break
-    print("Thank you for playing!")
+    ochprint("\nThank you for playing!")
 
 
 gameloop()
