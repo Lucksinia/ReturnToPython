@@ -1,4 +1,5 @@
 import pygame
+from random import choice
 
 
 class WFC:
@@ -8,7 +9,18 @@ class WFC:
         self.clock = pygame.time.Clock()
 
     def run(self):
-        self.display.fill((0, 0, 0))
+        while True:
+            self.display.fill((0, 0, 0))
+            for event in pygame.event.get():
+                match event.type:
+                    case pygame.QUIT:
+                        quit()
+                    case pygame.KEYDOWN:
+                        if event.key == pygame.K_d:
+                            hover = not hover
+                        elif event.key == pygame.K_q:
+                            quit()
+            self.display.flip()
 
 
 class Cell:
@@ -30,7 +42,7 @@ class Cell:
 
     def observe(self):
         try:
-            self.options = [random.choise(self.options)]
+            self.options = [choice(self.options)]
             self.collapsed = True
         except:
             return
