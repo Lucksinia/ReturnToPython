@@ -4,6 +4,6 @@ This is just a little repository with some tasks from the books or the internet 
 
 ## List of Tasks ##
 
-- Pico! Fermi! Bagels! - [Basic Number Guessing Game](bagels.py)
-- The Mighty Song of Beer! - [99 Bottels of...](beersong.py)
-- Birthday "Paradox" - [52.6%](bdayparadox.py) [x]
+- Pico! Fermi! Bagels! [x] - [Basic Number Guessing Game](bagels.py)
+- The Mighty Song of Beer! [x] - [99 Bottels of...](beersong.py)
+- Wave Function Collapse [ ] - Not here Yet.
