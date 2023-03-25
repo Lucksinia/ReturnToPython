@@ -3,11 +3,21 @@ from random import choice
 from copy import copy
 
 
+def load_images(path, _rez, padding=0):
+    img = pg.image.load(path).convert_alpha()
+    img = pg.transform.scale(img, (_rez - padding, _rez - padding))
+
+
 class WFC:
     def __init__(self):
         pg.init()
+        self.options = []
         self.screen = pg.display.set_mode((600, 600))
         self.clock = pg.time.Clock()
+        self.rez = 30
+        for i in range(5):
+            img = load_images(f"./assets/{i}.png", self.rez)
+            self.options.append(Tile(img))
 
     def update(self):
         pg.display.flip()
