@@ -42,19 +42,24 @@ class App:
             if e.type == pg.QUIT:
                 pg.quit()
                 quit()
+            elif e.type == pg.MOUSEBUTTONDOWN:
+                self.x = 0.0
+                self.y = 0.0
+                self.screen.fill((0, 0, 0))
 
     def update(self) -> None:
         pg.display.flip()
-        pg.display.set_caption(f"Barnsley Fern")
+        pg.display.set_caption(f"Barnsley Fern [{int(self.clock.get_fps())}]")
 
     def draw(self) -> None:
         # numbers are arbitrary, but derived from
         x = self.x * 60
         y = self.y * 37 - 272
-        pg.draw.circle(self.screen, "white", (x + 300, y + 300), 1)
+        pg.draw.circle(self.screen, "white", (x + 300, -y + 300), 1)
 
     def run(self) -> None:
         while True:
+            self.clock.tick()
             self.check_events()
             self.update()
             self.draw()
