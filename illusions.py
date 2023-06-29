@@ -8,7 +8,7 @@ turtle.bgcolor("white")
 def circles():
     turtle.hideturtle()
     turtle.speed(0)
-    # turtle.traser(0) if you want instantenious result.
+    # turtle.tracer(0)  # if you want instantenious result.
     turtle.penup()
     turtle.goto(0, 0)
     turtle.pendown()
