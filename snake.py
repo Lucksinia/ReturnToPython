@@ -3,6 +3,8 @@ from random import randint
 from os import system
 from colorama import Fore, init
 
+init(autoreset=True)
+
 
 def print_window():
     for cell in CELLS:
