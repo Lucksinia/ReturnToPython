@@ -14,3 +14,4 @@ This is just a little repository with some tasks from __The Books__/__The Intern
 - Algorithmic graphics Part 1. [x] - [Barnsley Fern.](barnsley_fern.py)
 - Some Sorting Algoritms! [x] - [And their results!](sortings.py)
 - Basic Turtle animation. [x] - [Illusion of complexity.](illusions.py)
+- Basic Fractal Tree. [x] - [Recursive Gardening!](fractal_tree_recursive.py)
