@@ -1,5 +1,4 @@
 import turtle
-import time
 
 turtle.setup(800, 600)
 turtle.bgcolor("white")

@@ -45,7 +45,6 @@ class App:
 
     def run(self) -> None:
         while True:
-            # self.clock.tick()
             self.check_events()
             self.update()
             self.draw()
