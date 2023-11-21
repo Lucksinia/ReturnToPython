@@ -7,7 +7,7 @@ from prettify import ochprint
 
 word = "bottles"
 for bottles_num in range(99, 0, -1):
-    ochprint(f"{bottles_num} {word} of beer left on the wall!\n")
+    ochprint(f"{bottles_num} {word} of beer left on the wall!\n", 0.02)
     ochprint(f"{bottles_num} {word} of beer.\n")
     ochprint("Take one down.\n")
     ochprint("Pass it around.\n")

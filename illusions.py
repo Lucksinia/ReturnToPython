@@ -1,13 +1,13 @@
 import turtle
 
 turtle.setup(800, 600)
-turtle.bgcolor("white")
+turtle.bgcolor(0.1, 0.1, 0.1)
 
 
 def circles():
     turtle.hideturtle()
     turtle.speed(0)
-    # turtle.tracer(0)  # if you want instantenious result.
+    # turtle.tracer()  # if you want instantenious result.
     turtle.penup()
     turtle.goto(0, 0)
     turtle.pendown()
