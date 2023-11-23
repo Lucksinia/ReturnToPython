@@ -6,12 +6,33 @@ This is just a little repository with some tasks from __The Books__/__The Intern
 
 ## List of Tasks ##
 
-- Very basic Numbers Guessing. [x] - [From 1 to a 100.](Number_guessing_game.py)
-- Pico! Fermi! Bagels! [x] - [Basic Number Guessing Game.](bagels.py)
-- The Mighty Song of Beer! [x] - [99 Bottels of...](beersong.py)
-- Basic implementation of levenstain distance. [x] - [Levenstain Distance.](lev_imp.py)
-- Ready, Start, Snake! [x] - [Basic Snake game in terminal.](snake.py)
-- Algorithmic graphics Part 1. [x] - [Barnsley Fern.](barnsley_fern.py)
-- Some Sorting Algoritms! [x] - [And their results!](sortings.py)
-- Basic Turtle animation. [x] - [Illusion of complexity.](illusions.py)
-- Basic Fractal Tree. [x] - [Recursive Gardening!](fractal_tree_recursive.py)
+### cli ###
+
+- Very basic Numbers Guessing. [x] - [From 1 to a 100.](cli/Number_guessing_game.py)
+- Pico! Fermi! Bagels! [x] - [Basic Number Guessing Game.](cli/bagels.py)
+- The Mighty Song of Beer! [x] - [99 Bottels of...](cli/beersong.py)
+- Basic implementation of levenstain distance. [x] - [Levenstain Distance.](cli/lev_imp.py)
+- Ready, Start, Snake! [x] - [Basic Snake game in terminal.](cli/snake.py)
+
+### Pygame-ce Grapfics ###
+
+- Algorithmic graphics Part 1. [x] - [Barnsley Fern.](pygame/barnsley_fern.py)
+- Algorithmic graphics Part 2. [x] - [Recursive Gardening! Fractal Tree.](pygame/fractal_tree_recursive.py)
+
+### Turtle Graphics ###
+
+- Basic Turtle animation. [x] - [Illusion of complexity.](turtle/illusions.py)
+
+### Algoritms ###
+
+- Some Sorting Algoritms! [x] - [And their results!](algoritms/sortings.py)
+
+### Exercises ###
+
+>From [w3resource.com](https://www.w3resource.com/python-exercises/python-basic-exercises.php)
+
+- [1](Exercises/1.py) [x] - Multiline print
+- [2](Exercises/2.py) [x] - A little sys
+- [3](Exercises/3.py) [x] - Now that's a datetime!
+- [4](Exercises/4.py) [x] - __PI__-oneer that circle!
+- [5](Exercises/5.py) [x] - Fake reverse

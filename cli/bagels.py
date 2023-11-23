@@ -3,7 +3,7 @@ Bagels! game implementation. Shoud also implement character-by-character
 for style points...
 """
 from random import shuffle
-from prettify import ochprint
+from prettify.prettify import ochprint
 
 DIGITS = 3  # Number of digits in number.
 GUESSES = 10  # all posibble guesses
